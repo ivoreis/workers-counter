@@ -1,0 +1,15 @@
+name = "workers-counter"
+type = "javascript"
+account_id = ""
+zone_id = ""
+workers_dev = true
+
+[build]
+command = "npm install && npm run build"
+
+[build.upload]
+format = "modules"
+main = "./index.mjs"
+
+# [durable_objects]
+# bindings = [{name = "COUNTER", class_name = "Counter"}]
